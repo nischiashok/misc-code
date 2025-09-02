@@ -64,6 +64,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
 
   admin_username                = "azuser"
   admin_password                = "Dev@12345678"
+  disable_password_authentication = false
   network_interface_ids = [azurerm_network_interface.privateip.id]
 
   os_disk {
