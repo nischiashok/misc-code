@@ -84,14 +84,14 @@ resource "azurerm_linux_virtual_machine" "vm" {
 }
 
 
-
-resource "azurerm_dns_a_record" "public_dns_record" {
-  name                = var.name
-  zone_name           = "omshiva.shop"
-  resource_group_name = var.rg_name
-  ttl                 = 3
-  records             = [azurerm_public_ip.publicip.ip_address]
-}
+#
+# resource "azurerm_dns_a_record" "public_dns_record" {
+#   name                = var.name
+#   zone_name           = "omshiva.shop"
+#   resource_group_name = var.rg_name
+#   ttl                 = 3
+#   records             = [azurerm_public_ip.publicip.ip_address]
+# }
 
 resource "azurerm_dns_a_record" "private_dns_record" {
   name                = "${var.name}-int"
@@ -99,4 +99,8 @@ resource "azurerm_dns_a_record" "private_dns_record" {
   resource_group_name = var.rg_name
   ttl                 = 3
   records             = [azurerm_network_interface.privateip.private_ip_address]
+}
+
+output "ip" {
+  value = azurerm_public_ip.publicip
 }
