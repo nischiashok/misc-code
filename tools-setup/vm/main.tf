@@ -3,6 +3,7 @@ resource "azurerm_public_ip" "publicip" {
   resource_group_name = var.rg_name
   location            = var.rg_location
   allocation_method   = "Dynamic"
+  sku                 = "Basic"
 }
 
 resource "azurerm_network_interface" "privateip" {
@@ -59,21 +60,22 @@ resource "azurerm_linux_virtual_machine" "vm" {
   location                      = var.rg_location
   resource_group_name           = var.rg_name
   size                          = var.vm_size
-  delete_os_disk_on_termination = true
+
 
   admin_username                = "azuser"
   admin_password                = "Dev@12345678"
   network_interface_ids = [azurerm_network_interface.privateip.id]
 
   os_disk {
-    name              = "${var.name}-disk"
+    name                 = "${var.name}-disk"
     caching              = "ReadWrite"
     storage_account_type = "Standard_LRS"
+    delete_os_disk_on_termination = true
   }
 
-  source_image_id {
-    id = "/subscriptions/e0be8e24-25e7-4901-ad14-ea389c0f1289/resourceGroups/project-setup-1/providers/Microsoft.Compute/images/local-devops-pratice"
-  }
+  source_image_id = "/subscriptions/e0be8e24-25e7-4901-ad14-ea389c0f1289/resourceGroups/project-setup-1/providers/Microsoft.Compute/images/local-devops-pratice"
+
+
   #spot details
   priority = "Spot"
   max_bid_price = -1
