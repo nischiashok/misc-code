@@ -23,6 +23,7 @@ resource "azurerm_network_interface_security_group_association" "nsg-attach" {
   network_security_group_id = "/subscriptions/e0be8e24-25e7-4901-ad14-ea389c0f1289/resourceGroups/project-setup-1/providers/Microsoft.Network/networkSecurityGroups/allow-all"
 }
 
+############ WE MOVED TO SPOT INSTANCE TO SAVE COST ################
 # resource "azurerm_virtual_machine" "vm" {
 #   name                          = var.name
 #   location                      = var.rg_location
