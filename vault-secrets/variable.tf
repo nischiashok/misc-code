@@ -16,8 +16,9 @@ variable "values" {
     cart ={
       secret = "roboshop-dev"
       value = {
-        zip = "zap",
-        foo = "bar"
+        REDIS_HOST="redis.omshiva.shop"
+        CATALOGUE_HOST="catalogue.omshiva.shop"
+        CATALOGUE_PORT=8080
       }
     }
 
@@ -31,6 +32,63 @@ variable "values" {
         shipping_url = "https://shipping-dev.omshiva.shop:8080"
       }
     }
+
+    catalogue ={
+      secret = "roboshop-dev"
+      value = {
+        MONGO="true"
+        MONGO_URL="mongodb://mongodb.omshiva.shop:27017/catalogue"
+      }
+    }
+
+    payment ={
+      secret = "roboshop-dev"
+      value = {
+        CART_HOST="cart.omshiva.shop"
+        CART_PORT=8080
+        USER_HOST="user.omshiva.shop"
+        USER_PORT=8080
+        AMQP_HOST="rabbitmq.omshiva.shop"
+
+        AMQP_USER=roboshop
+        AMQP_PASS=roboshop123
+      }
+    }
+    shipping ={
+      secret = "roboshop-dev"
+      value = {
+        CART_ENDPOINT="cart.omshiva.shop:8080"
+        DB_HOST="mysql.omshiva.shop"
+      }
+    }
+
+    user ={
+      secret = "roboshop-dev"
+      value = {
+        MONGO="true"
+        REDIS_URL="redis://redis.omshiva.shop:6379"
+        MONGO_URL="mongodb://mongodb.omshiva.shop:27017/users"
+      }
+    }
+
+    rabbitmq ={
+      secret = "roboshop-dev"
+      value = {
+        username="roboshop"
+        passowrd="roboshop123"
+
+      }
+    }
+
+    mysql ={
+      secret = "roboshop-dev"
+      value = {
+        username="root"
+        passowrd="RoboShop@1"
+      }
+    }
+
+
     ssh = {
       secret = "roboshop-infra"
       value ={
