@@ -18,7 +18,7 @@ variable "values" {
       value = {
         REDIS_HOST="redis.omshiva.shop"
         CATALOGUE_HOST="catalogue.omshiva.shop"
-        CATALOGUE_PORT=8080
+        CATALOGUE_PORT="8080"
       }
     }
 
@@ -45,9 +45,9 @@ variable "values" {
       secret = "roboshop-dev"
       value = {
         CART_HOST="cart.omshiva.shop"
-        CART_PORT=8080
+        CART_PORT="8080"
         USER_HOST="user.omshiva.shop"
-        USER_PORT=8080
+        USER_PORT="8080"
         AMQP_HOST="rabbitmq.omshiva.shop"
 
         AMQP_USER="roboshop"
