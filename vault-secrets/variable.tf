@@ -25,11 +25,11 @@ variable "values" {
     frontend={
       secret = "roboshop-dev"
       value = {
-        catalogue_url = "https://catalogue-dev.omshiva.shop:8080"
-        user_url = "https://user-dev.omshiva.shop:8080"
-        cart_url = "https://cart-dev.omshiva.shop:8080"
-        payment_url = "https://payment-dev.omshiva.shop:8080"
-        shipping_url = "https://shipping-dev.omshiva.shop:8080"
+        catalogue_url = "https://catalogue.omshiva.shop:8080"
+        user_url = "https://user.omshiva.shop:8080"
+        cart_url = "https://cart.omshiva.shop:8080"
+        payment_url = "https://payment.omshiva.shop:8080"
+        shipping_url = "https://shipping.omshiva.shop:8080"
       }
     }
 
@@ -54,6 +54,7 @@ variable "values" {
         AMQP_PASS="roboshop123"
       }
     }
+
     shipping ={
       secret = "roboshop-dev"
       value = {
