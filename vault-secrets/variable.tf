@@ -50,8 +50,8 @@ variable "values" {
         USER_PORT=8080
         AMQP_HOST="rabbitmq.omshiva.shop"
 
-        AMQP_USER=roboshop
-        AMQP_PASS=roboshop123
+        AMQP_USER="roboshop"
+        AMQP_PASS="roboshop123"
       }
     }
     shipping ={
