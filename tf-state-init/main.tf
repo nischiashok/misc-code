@@ -4,7 +4,7 @@ provider "azurerm" {
 }
 
 resource "azurerm_storage_account" "example" {
-  name                     = "nishiashoksatf-state"
+  name                     = "nishiashoksatfstate"
   resource_group_name      = "project-setup-1"
   location                 = "UK West"
   account_tier             = "Standard"
