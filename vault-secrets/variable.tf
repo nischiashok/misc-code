@@ -16,8 +16,8 @@ variable "values" {
     cart ={
       secret = "roboshop-dev"
       value = {
-        REDIS_HOST="redis.omshiva.shop"
-        CATALOGUE_HOST="catalogue.omshiva.shop"
+        REDIS_HOST="redis-dev.omshiva.shop"
+        CATALOGUE_HOST="catalogue-dev.omshiva.shop"
         CATALOGUE_PORT="8080"
       }
     }
@@ -25,11 +25,11 @@ variable "values" {
     frontend={
       secret = "roboshop-dev"
       value = {
-        catalogue_url = "https://catalogue.omshiva.shop:8080"
-        user_url = "https://user.omshiva.shop:8080"
-        cart_url = "https://cart.omshiva.shop:8080"
-        payment_url = "https://payment.omshiva.shop:8080"
-        shipping_url = "https://shipping.omshiva.shop:8080"
+        catalogue_url = "https://catalogue-dev.omshiva.shop:8080"
+        user_url = "https://user-dev.omshiva.shop:8080"
+        cart_url = "https://cart-dev.omshiva.shop:8080"
+        payment_url = "https://payment-dev.omshiva.shop:8080"
+        shipping_url = "https://shipping-dev.omshiva.shop:8080"
       }
     }
 
@@ -37,29 +37,28 @@ variable "values" {
       secret = "roboshop-dev"
       value = {
         MONGO="true"
-        MONGO_URL="mongodb://mongodb.omshiva.shop:27017/catalogue"
+        MONGO_URL="mongodb://mongodb-dev.omshiva.shop:27017/catalogue"
       }
     }
 
     payment ={
       secret = "roboshop-dev"
       value = {
-        CART_HOST="cart.omshiva.shop"
+        CART_HOST="cart-dev.omshiva.shop"
         CART_PORT="8080"
-        USER_HOST="user.omshiva.shop"
+        USER_HOST="user-dev.omshiva.shop"
         USER_PORT="8080"
-        AMQP_HOST="rabbitmq.omshiva.shop"
+        AMQP_HOST="rabbitmq-dev.omshiva.shop"
 
         AMQP_USER="roboshop"
         AMQP_PASS="roboshop123"
       }
     }
-
     shipping ={
       secret = "roboshop-dev"
       value = {
-        CART_ENDPOINT="cart.omshiva.shop:8080"
-        DB_HOST="mysql.omshiva.shop"
+        CART_ENDPOINT="cart-dev.omshiva.shop:8080"
+        DB_HOST="mysql-dev.omshiva.shop"
       }
     }
 
@@ -67,8 +66,8 @@ variable "values" {
       secret = "roboshop-dev"
       value = {
         MONGO="true"
-        REDIS_URL="redis://redis.omshiva.shop:6379"
-        MONGO_URL="mongodb://mongodb.omshiva.shop:27017/users"
+        REDIS_URL="redis://redis-dev.omshiva.shop:6379"
+        MONGO_URL="mongodb://mongodb-dev.omshiva.shop:27017/users"
       }
     }
 
