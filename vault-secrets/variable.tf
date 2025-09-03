@@ -59,6 +59,8 @@ variable "values" {
       value = {
         CART_ENDPOINT="cart-dev.omshiva.shop:8080"
         DB_HOST="mysql-dev.omshiva.shop"
+        username="root"
+        passowrd="RoboShop@1"
       }
     }
 
