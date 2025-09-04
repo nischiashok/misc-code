@@ -9,6 +9,6 @@ terraform {
     resource_group_name  = "project-setup-1"
     storage_account_name = "nishiashoksatfstate"
     container_name       = "roboshop-state-files"
-    key                  = "tools.terraform.tfstate"
+    key                  = "vmmmmmmm.terraform.tfstate"
   }
 }
