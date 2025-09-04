@@ -108,7 +108,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
 
 
 resource "azurerm_dns_a_record" "public_dns_record" {
-  depends_on          = [azurerm_linux_virtual_machine.main]
+  depends_on          = [azurerm_linux_virtual_machine.vm]
   name                = var.name
   zone_name           = "omshiva.shop"
   resource_group_name = var.rg_name
