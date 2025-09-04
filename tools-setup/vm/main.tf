@@ -84,29 +84,6 @@ resource "azurerm_linux_virtual_machine" "vm" {
 
 
 
-# resource "azurerm_linux_virtual_machine" "main" {
-#   name                  = "..."
-#   resource_group_name   = var.name
-#   location              = var.rg_location
-#   size                  = "Standard_B2s"
-#   admin_username        = "azuser"
-#   network_interface_ids = [azurerm_network_interface.privateip.id]
-#
-#   admin_ssh_key {
-#     username   = "azuser"
-#     public_key = file("~/.ssh/id_rsa.pub")
-#   }
-#
-#   os_disk {
-#     name                 = "${var.name}-disk"
-#     caching              = "ReadWrite"
-#     storage_account_type = "Standard_LRS"
-#
-#   }
-#   source_image_id = "/subscriptions/e0be8e24-25e7-4901-ad14-ea389c0f1289/resourceGroups/project-setup-1/providers/Microsoft.Compute/images/local-devops-pratice"
-# }
-
-
 resource "azurerm_dns_a_record" "public_dns_record" {
   depends_on          = [azurerm_linux_virtual_machine.vm]
   name                = var.name
