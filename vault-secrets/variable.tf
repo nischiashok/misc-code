@@ -10,7 +10,6 @@ variable "secrets" {
     }
   }
 }
-
 # variable "values" {
 #   default = {
 #     cart ={
