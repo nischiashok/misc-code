@@ -90,7 +90,7 @@ variable "values" {
     }
 
 
-    secret = {
+    sec = {
       secret = "roboshop-infra"
       value = {
         username = "azuser"
