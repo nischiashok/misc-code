@@ -89,12 +89,12 @@ variable "secrets" {
 #       }
 #     }
 # }
-
-
-    SSH = {
-      secret = "roboshop-infra"
-      value ={
-        username = "azuser"
-        password = "Dev@12345678"
-      }
-    }
+#
+#
+#     SSH = {
+#       secret = "roboshop-infra"
+#       value ={
+#         username = "azuser"
+#         password = "Dev@12345678"
+#       }
+#     }
