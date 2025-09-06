@@ -1,5 +1,5 @@
 provider "vault" {
-  address = "http://vault.omshiva.shop:8200"
+  address = "http://vault.omshiva.shop:8200/ui/vault/auth?with=token%2F"
   token   = var.token
 }
 
