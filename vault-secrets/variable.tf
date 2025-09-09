@@ -92,7 +92,7 @@ variable "values" {
     }
 
 
-    sec = {
+    ssh = {
       secret = "roboshop-infra"
       value = {
         username = "azuser"
