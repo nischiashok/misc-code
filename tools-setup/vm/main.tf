@@ -88,7 +88,7 @@ resource "azurerm_dns_a_record" "public_dns_record" {
   zone_name           = "omshiva.shop"
   resource_group_name = var.rg_name
   ttl                 = 3
-  records             = [azurerm_public_ip.publicip.ip_address]
+  records             = azurerm_public_ip.publicip.ip_address
 
 }
 
