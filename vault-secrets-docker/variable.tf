@@ -25,19 +25,40 @@ variable "values" {
     frontend = {
       secret = "roboshop-dev"
       value = {
-        catalogue_url = "https://catalogue-dev.omshiva.shop:8080"
-        user_url      = "https://user-dev.omshiva.shop:8080"
-        cart_url      = "https://cart-dev.omshiva.shop:8080"
-        payment_url   = "https://payment-dev.omshiva.shop:8080"
-        shipping_url  = "https://shipping-dev.omshiva.shop:8080"
+        catalogue_url   = "https://catalogue-dev.omshiva.shop:8080"
+        user_url        = "https://user-dev.omshiva.shop:8080"
+        cart_url        = "https://cart-dev.omshiva.shop:8080"
+        payment_url     = "https://payment-dev.omshiva.shop:8080"
+        shipping_url    = "https://shipping-dev.omshiva.shop:8080"
+
+        CATALOGUE_HOST  ="catalogue-dev.omshiva.shop:8080"
+        CATALOGUE_PORT  =8080
+        USER_HOST       ="user-dev.omshiva.shop:8080"
+        USER_PORT       =8080
+        CART_HOST       ="cart-dev.omshiva.shop:8080"
+        CART_PORT       =8080
+        SHIPPING_HOST   ="shipping-dev.omshiva.shop:8080"
+        SHIPPING_PORT   =8080
+        PAYMENT_HOST    ="payment-dev.omshiva.shop:8080"
+        PAYMENT_PORT    =8080
+
+
+
+
+
+
       }
     }
 
     catalogue = {
       secret = "roboshop-dev"
       value = {
-        MONGO     = "true"
+        MONGO = "true"
         MONGO_URL = "mongodb://mongodb-dev.omshiva.shop:27017/catalogue"
+        DB_TYPE = "mongo"
+        APP_GIT_URL = "https://github.com/roboshop-devops-project-v3/catalogue"
+        DB_HOST = "mongodb-dev.omshiva.shop"
+        SCHEMA_FILE = "db/master-data.js"
       }
     }
 
@@ -60,8 +81,13 @@ variable "values" {
       value = {
         CART_ENDPOINT = "cart-dev.omshiva.shop:8080"
         DB_HOST       = "mysql-dev.omshiva.shop"
+        DB_USER      = "root"
+        DB_PASS      = "RoboShop@1"
         username      = "root"
         passowrd      = "RoboShop@1"
+        DB_TYPE       = "mysql"
+        APP_GIT_URL   = "https://github.com/roboshop-devops-project-v3/shipping"
+        DB_HOST       = "mysql-dev.omshiva.shop"
       }
     }
 

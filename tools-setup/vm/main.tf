@@ -71,7 +71,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
     storage_account_type = "Standard_LRS"
   }
 
-  source_image_id = "/subscriptions/e0be8e24-25e7-4901-ad14-ea389c0f1289/resourceGroups/project-setup-1/providers/Microsoft.Compute/images/local-devops-pratice"
+  source_image_id = "/subscriptions/e0be8e24-25e7-4901-ad14-ea389c0f1289/resourcegroups/project-setup-1/providers/Microsoft.Compute/images/local-devops-pratice"
 
 
   #spot details
