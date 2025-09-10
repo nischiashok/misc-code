@@ -61,7 +61,7 @@ variable "values" {
         CART_ENDPOINT = "cart-dev.omshiva.shop:8080"
         DB_HOST       = "mysql-dev.omshiva.shop"
         username      = "root"
-        passowrd      = "RoboShop@1"
+        password      = "RoboShop@1"
       }
     }
 
@@ -78,7 +78,7 @@ variable "values" {
       secret = "roboshop-dev"
       value = {
         username = "roboshop"
-        passowrd = "roboshop123"
+        password = "roboshop123"
 
       }
     }
@@ -87,7 +87,7 @@ variable "values" {
       secret = "roboshop-dev"
       value = {
         username = "root"
-        passowrd = "RoboShop@1"
+        password = "RoboShop@1"
       }
     }
 
