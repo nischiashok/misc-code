@@ -42,11 +42,6 @@ variable "values" {
         PAYMENT_HOST    ="payment-dev.omshiva.shop:8080"
         PAYMENT_PORT    =8080
 
-
-
-
-
-
       }
     }
 
