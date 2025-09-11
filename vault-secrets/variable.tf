@@ -113,6 +113,7 @@ variable "values" {
       value = {
         username = "azuser"
         password = "DevOps@123456"
+
       }
     }
   }
