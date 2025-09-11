@@ -17,7 +17,7 @@ variable "values" {
       secret = "roboshop-dev"
       value = {
         REDIS_HOST     = "redis-dev.omshiva.shop"
-        CATALOGUE_HOST = "catalogue"
+        CATALOGUE_HOST = "catalogue-dev.omshiva.shop"
         CATALOGUE_PORT = 8080
       }
     }
