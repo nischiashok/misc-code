@@ -93,7 +93,7 @@ variable "values" {
       secret = "roboshop-infra"
       value = {
         username = "azuser"
-        password = "DevOps@123456"
+        password = "Dev@12345678"
 
       }
     }
