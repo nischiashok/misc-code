@@ -44,11 +44,11 @@ A[Developer Writes Code] --> B[Push to GitHub Repository]
 B --> C[GitHub Actions Triggered]
 C --> D[Terraform Init & Plan]
 D --> E{Plan Approval?}
-E -- Yes --> F[Terraform Apply (Provision Resources)]
+E -- Yes --> F[Terraform Apply: Provision Resources]
 E -- No --> G[Abort Deployment]
 F --> H[Resources Deployed on AWS]
-H --> I[Outputs Stored in S3/State Mgmt]
-H --> J[Notifications Sent (Slack/Email)]
+H --> I[Outputs Stored in S3/State Management]
+H --> J[Notifications Sent: Slack/Email]
 G --> K[Notify Failure]
 ```
 
