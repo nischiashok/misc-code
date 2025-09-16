@@ -31,15 +31,15 @@ variable "values" {
         payment_url     = "https://payment-dev.omshiva.shop:8080"
         shipping_url    = "https://shipping-dev.omshiva.shop:8080"
 
-        CATALOGUE_HOST  ="catalogue-dev.omshiva.shop:8080"
+        CATALOGUE_HOST  ="catalogue-dev.omshiva.shop"
         CATALOGUE_PORT  =8080
-        USER_HOST       ="user-dev.omshiva.shop:8080"
+        USER_HOST       ="user-dev.omshiva.shop"
         USER_PORT       =8080
-        CART_HOST       ="cart-dev.omshiva.shop:8080"
+        CART_HOST       ="cart-dev.omshiva.shop"
         CART_PORT       =8080
-        SHIPPING_HOST   ="shipping-dev.omshiva.shop:8080"
+        SHIPPING_HOST   ="shipping-dev.omshiva.shop"
         SHIPPING_PORT   =8080
-        PAYMENT_HOST    ="payment-dev.omshiva.shop:8080"
+        PAYMENT_HOST    ="payment-dev.omshiva.shop"
         PAYMENT_PORT    =8080
 
       }
